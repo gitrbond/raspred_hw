@@ -1,0 +1,16 @@
+processes 1 5
+bidirected 1
+;link from 0 to 4 latency 0.2
+;link from 0 to 5 latency 0.4
+;link from 1 to 5 latency 0.7
+;link from 2 to 1 latency 0.3
+;link from 2 to 3 latency 0.2
+;link from 4 to 1 latency 0.5
+;link from 4 to 5 latency 0.2
+;link from 5 to 2 latency 0.2
+;link from 5 to 3 latency 0.6
+;link from 3 to 5 latency 0.6
+link from all to all
+setprocesses 1 5 Bully
+send from -1 to 2 Bully_Election_Init
+;wait 60 
